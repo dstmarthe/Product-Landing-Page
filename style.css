@@ -1,0 +1,31 @@
+body {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
+main {
+	width: 100%;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	grid-template-columns: minmax(140px, 50%) 1fr;
+	flex-wrap: wrap;
+}
+header {
+	width: 100%;
+}
+#nav-bar a {
+	text-decoration: none;
+}
+#nav-bar {
+	background-color: rgba(0, 0, 0, 0.1);
+	position: absolute;
+	width: 100%;
+	margin: 0;
+}
+p {
+	margin: 0;
+}
+.box {
+	display: grid;
+	height: 100vh;
+}

@@ -1,28 +1,46 @@
 body {
 	display: grid;
 	grid-template-rows: auto 1fr auto;
+	margin: auto;
 }
 main {
 	width: 100%;
-	margin: 0;
 	display: flex;
 	flex-direction: column;
 	grid-template-columns: minmax(140px, 50%) 1fr;
 	flex-wrap: wrap;
+}
+#heroMsg {
+	background-image: url("BlueBG.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	align-items: center;
+}
+#heroMsg h2 {
+	/*First large white text.  */
+	color: white;
+	padding: 0 0 0 90px;
+}
+#callBtn {
+	padding: 0 0 100px 0;
+	margin: 0;
+	color: slategray;
+	width: 100px;
+	height: 30px;
 }
 header {
 	width: 100%;
 }
 #nav-bar a {
 	text-decoration: none;
+	color: white;
 }
 #nav-bar {
 	background-color: rgba(0, 0, 0, 0.1);
-	position: absolute;
+	position: fixed;
 	width: 100%;
-	margin: 0;
-}
-p {
+	height: 5%;
 	margin: 0;
 }
 .box {

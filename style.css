@@ -1,49 +1,72 @@
+* {
+	box-sizing: border-box;
+}
 body {
 	display: grid;
 	grid-template-rows: auto 1fr auto;
 	margin: auto;
+	font-family: "Josefin Sans", sans-serif;
 }
 main {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	grid-template-columns: minmax(140px, 50%) 1fr;
+	grid-template-columns: minmax(140px, 50%), 1fr;
 	flex-wrap: wrap;
 }
+header {
+	width: 100%;
+}
+#titleImg {
+	width: 30vw;
+	display: inline-block;
+	margin: 0;
+}
 #heroMsg {
+	flex: 1;
 	background-image: url("BlueBG.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	align-items: center;
+	height: 100vh;
 }
 #heroMsg h2 {
-	/*First large white text.  */
+	/*Main large white text.  */
 	color: white;
 	padding: 0 0 0 90px;
+	font-size: clamp(2rem, 3vw, 5rem);
 }
 #callBtn {
-	padding: 0 0 100px 0;
-	margin: 0;
+	display: inline-block;
 	color: slategray;
-	width: 100px;
-	height: 30px;
-}
-header {
-	width: 100%;
-}
-#nav-bar a {
+	width: 150px;
+	height: 50px;
+	text-transform: uppercase;
 	text-decoration: none;
-	color: white;
+	background-color: black;
+	margin: 0 0 30vh 10vw;
+	text-align: center;
 }
+
 #nav-bar {
-	background-color: rgba(0, 0, 0, 0.1);
+	/* background-color: rgba(0, 0, 0, 0.1); */
 	position: fixed;
 	width: 100%;
 	height: 5%;
 	margin: 0;
+	text-align: right;
+	padding-top: 7px;
+	text-transform: uppercase;
 }
+.nav-link {
+	text-decoration: none;
+	color: white;
+	padding: 0 4px;
+	color: whitesmoke;
+	font-size: 0.79rem;
+}
+
 .box {
 	display: grid;
-	height: 100vh;
 }

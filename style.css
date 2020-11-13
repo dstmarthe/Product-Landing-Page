@@ -7,12 +7,13 @@ body {
 	margin: auto;
 	font-family: "Josefin Sans", sans-serif;
 }
-main, header {
+main,
+header {
 	width: 100%;
 }
 #header-img {
-	width: 6%;
-	margin: 2vh 0 0 1vw;
+	width: 8%;
+	margin: 1.5vh 0 0 2vw;
 	height: auto;
 	position: absolute;
 }
@@ -22,12 +23,12 @@ main, header {
 	height: 6%;
 	margin: 0;
 	text-align: right;
-	padding-top: 10px;
-	padding-right: 8px;
+	padding-top: 11px;
+	padding-right: 50px;
 	text-transform: uppercase;
 }
 .bar {
-	background-color: rgba(0, 0, 0, 0.1);
+	background-color: rgba(0, 0, 0, 0.1); /*Navbar scroll transition*/
 }
 .nav-link {
 	text-decoration: none;
@@ -36,45 +37,60 @@ main, header {
 	color: whitesmoke;
 	font-size: 0.79rem;
 }
-
+#langForm {
+	display: inline;
+}
+#lang {
+	border: none;
+	text-transform: uppercase;
+	color: whitesmoke;
+	background-color: transparent;
+	font-family: "Josefin Sans", sans-serif;
+}
+#lang option {
+	color: black;
+}
 #heroImg {
-	margin: 13vh 0 0 0;
+	margin: 13vh 8vw 0 0;
 	max-width: 100%;
-	height: 84%;
-
+	height: 40vw;
+	width: 40vw;
+	filter: brightness(0.9) saturate(1.2);
 }
 #heroMsg {
-	background-image: url("BlueBG.png");
+	background-image: url("BlueBG2.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	display: flex;
 	height: 100vh;
-	
 }
 #textBox {
 	flex-basis: 50%;
-	margin: 10% 0 0 50px;
+	margin: 10vw 0 0 8vw;
 }
 #textBox p {
 	color: lightgray;
 	font-size: 1.3rem;
+	width: 40vw;
+	margin-top: -15px;
 }
 #heroMsg h2 {
 	/*Main large white text.  */
 	color: white;
-	font-size: clamp(2.2rem, 3vw, 5rem);
-	
+	font-size: clamp(2.2rem, 4vw, 3rem);
 }
-#callBtn {
-	display: block;
-	color: white;
-	width: 15vw;
+#gpBtn {
+	width: 12vw;
 	height: auto;
-	text-transform: uppercase;
-	text-decoration: none;
-	background-color: black;
-	text-align: center;
-	padding: 8px;
-	border-radius: 3px;
+	margin-left: -10px;
+	min-width: 100px;
+}
+#iosBtn {
+	/* Original image size is a bit off so making adjustments here */
+	margin-top: -3px;
+	width: 11.5vw;
+	min-width: 100px;
+	height: auto;
+	position: absolute;
 }

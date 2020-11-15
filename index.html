@@ -24,7 +24,7 @@
 					</select>
 				  </form>
 				<a href="" class="nav-link">Features </a>
-				<a href="" class="nav-link">Sign In</a>
+				<a href="#form" class="nav-link">Log In</a>
 			</nav>
 		</header>
 		<main>
@@ -45,16 +45,20 @@
 		</main>
 		<footer id="footer">
 			<form action="" id="form">
-				<input
+				<label for="email">Email: <br><input
 					type="email"
 					id="email"
-					placeholder="Enter your email to subscribe to our newsletter"
-				/>
+					name="email"
+					placeholder="Enter your email"
+				/></label>
+				<br>
+				<label for="pass">Password: <br><input type="text" name="pass" id="pass" placeholder="Enter your password"></label>
 				<button
 					type="submit"
 					id="submit"
 					formaction="https://www.freecodecamp.com/email-submit"
-				></button>
+				>Submit</button>
+					<a href="">Sign Up</a>
 			</form>
 		</footer>
 	</body>

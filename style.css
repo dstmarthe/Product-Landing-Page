@@ -56,7 +56,7 @@ header {
 
 #heroImg {
 	margin: 13vh 8vw 0 0;
-	max-width: 100%;
+	max-width: 60%;
 	height: 40vw;
 	width: 40vw;
 	filter: brightness(0.9) saturate(1.2);
@@ -105,11 +105,12 @@ header {
 } */
 
 #features {
-	width: 70%;
+	width: clamp(65vw, 75%, 100vw);
 	place-items: center;
 	margin: auto;
-	margin-top: 10vh;
-	height: 70vh;
+	margin-top: 8vh;
+	height: max-content;
+	padding: 0 0 50px 0;
 	display: grid;
 	grid-template-columns: 20vw 20vw 20vw;
 	grid-template-rows: auto 2fr;
@@ -117,7 +118,6 @@ header {
 	font-family: sans-serif;
 	line-height: 1.5em;
 	justify-content: center;
-	align-items: center;
 }
 .icon {
 	width: 20vh;
@@ -129,7 +129,7 @@ header {
 }
 footer {
 	width: 100%;
-	height: 70vh;
+	min-height: 30vw;
 	background-color: lightgray;
 }
 #form {
@@ -144,15 +144,49 @@ footer {
 	margin-bottom: 5vh;
 }
 #form input {
-	width: 20vw;
+	min-width: 150px;
+	width: 25vw;
 	padding: 7px;
 	border: none;
 	border-radius: 3px;
 }
 #submit {
-	width: 7vw;
+	min-width: 100px;
+	width: 8vw;
 }
 #form a {
 	font-size: 0.8rem;
 	margin: 20px 0 0 15vw;
+}
+
+#top {
+	
+	text-decoration: none;
+	color: gray;
+	position: absolute;
+	margin: 43% 0 0 40px;
+}
+@media only screen and (max-width: 600px) {
+	#heroImg {
+		display: none;
+	}
+	#heroMsg {
+		display: inline-block;
+	}
+	#textBox p {
+		width: 80vw;
+	}
+	#textBox h2 {
+		margin-top: 20vh;
+	}
+	#features {
+		display: flex;
+		flex-flow: column;
+	}
+	.icon {
+		margin: ;
+	}
+	#custIcon {
+		margin-top: 20px;
+	}
 }

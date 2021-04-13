@@ -140,7 +140,7 @@ h2 {
   width: clamp(60vw, 70%, 100vw);
   place-items: center;
   font-size: 1.2rem;
-  margin: 16vh auto;
+  margin: 16vh auto -10vh auto;
   display: grid;
   grid-template-columns: 20vw 20vw 20vw;
   grid-template-rows: auto auto 2fr;
@@ -167,17 +167,17 @@ h2 {
 
 .ft1 {
   animation-name: slide1;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
   animation-fill-mode: forward;
 }
 .ft2 {
   animation-name: slide2;
-  animation-duration: 1.85s;
+  animation-duration: 1.35s;
   animation-fill-mode: forward;
 }
 .ft3 {
   animation-name: slide3;
-  animation-duration: 2.25s;
+  animation-duration: 1.7s;
   animation-fill-mode: forward;
 }
 .invis {
@@ -226,6 +226,10 @@ h2 {
   }
 }
 
+#waves {
+  margin: 0;
+}
+
 footer {
   width: 100%;
   min-height: 30vw;
@@ -249,7 +253,7 @@ footer {
   margin-bottom: 5vh;
 }
 #video {
-  margin: 20vh 0 5vh 0;
+  margin-top: 20vh;
   display: block;
 }
 #submit {
